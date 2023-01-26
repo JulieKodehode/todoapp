@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	/* margin: 0; */
+}
+
+html,
+body {
+	height: 100vh;
+	background-color: var(--lightTheme-veryLightGrayishBlue);
+	background-image: url(../images/bg-desktop-light.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	margin: 0;
+}
+
+.todoMain {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2.5em; /*Questionable*/
+
+	color: var(--lightTheme-veryLightGray);
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+.input {
+	width: 500px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+}
+
+.lilMenu {
+	margin: 0;
+	padding: 1em 0;
+}
+
+.lilMenu li {
+	display: inline-flex;
+	padding-inline: 1em;
+}
+
+.moonButton {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+}
+
+/* Mobile S(320), M(375px), L(425px)  */
+@media screen and (max-width: 426px) {
+	html,
+	body {
+		background-image: url(../images/bg-mobile-light.jpg);
+	}
+
+	.header {
+		font-size: var(--font-size);
+	}
+
+	.input {
+		width: 300px;
+	}
+
+	/* Ul li first and fifth child gone */
+	ul li:nth-child(1) {
+		display: none;
+	}
+
+	ul li:nth-child(5) {
+		display: none;
+	}
+}
