@@ -1,7 +1,10 @@
+// Components
+import ToDoApp from "./ToDoApp";
+
 const App = () => {
 	return (
 		<div>
-			<h1>HEI</h1>
+			<ToDoApp />
 		</div>
 	);
 };

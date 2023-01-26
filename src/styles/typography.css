@@ -1,0 +1,16 @@
+/* ## Typography
+### Body Copy
+- Font size: 18px
+
+### Font
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 400, 700 */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+	--font-family: "Josefin Sans", sans-serif;
+	--font-weight-small: 400;
+	--font-weight-large: 700;
+	--font-size: 18px;
+}
