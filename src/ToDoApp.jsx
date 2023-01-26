@@ -15,6 +15,7 @@ const ToDoApp = () => {
 	const [todo, setTodo] = useState([]);
 	const [newTodo, setNewTodo] = useState("");
 
+	// using local storage to not lose the todo items
 	const savedTodo = (newTodo) => {
 		localStorage.setItem("todo", JSON.stringify(newTodo));
 	};
@@ -35,6 +36,7 @@ const ToDoApp = () => {
 		}
 	};
 
+	// Delete button, finds the id of the desired todo and deletes it
 	const deleteTodo = (id) => {
 		let newTodos = todo.filter((todo) => todo.id !== id);
 		setTodo(newTodos);
