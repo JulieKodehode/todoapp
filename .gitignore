@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# frontend mentor info
+/frontendmentor
+
 # testing
 /coverage
 
